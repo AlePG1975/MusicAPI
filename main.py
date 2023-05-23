@@ -16,7 +16,7 @@ def musicapi(num):
         "4":"Art Deco",
         
     }
-    return musicapi{num}
+    return (musicapi[num])
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):
