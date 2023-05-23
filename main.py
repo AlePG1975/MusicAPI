@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app=FastAPI()
 
@@ -16,7 +17,6 @@ def musicapi(num):
         
     }
     return music{num}
-    return num
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):
@@ -42,5 +42,6 @@ def revisar_edades(E1,E2):
         return "Podria ser su padre"
     elif E1>E2:
         return "Eres mayor que tu"
-else:
+    else:
     return "Tiene la misma edad"
+
